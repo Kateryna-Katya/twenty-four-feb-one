@@ -13,65 +13,57 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
 ?>
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        <?= $domainTitle ?> — Экспертный консалтинг и стратегии роста
-    </title>
-<link rel="icon"
-    href="data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23635BFF;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%230A2540;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M4 16H9L12 6L18 26L21 16H28' stroke='url(%23grad)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='28' cy='16' r='3' fill='%23635BFF' /%3E%3C/svg%3E"
-    type="image/svg+xml">
-
+    <title><?= $domainTitle ?> — Искусство создания AI-ботов</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSI1IiBmaWxsPSIjMDBEMkZGIi8+PHBhdGggZD0iTTE2IDJDMTUuMjY1MyAxNiAxNiAxNiAyNiAxNiIgc3Ryb2tlPSIjMDBEMkZGIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0xNiAyQzE2LjczNDcgMTYgMTYgMTYgNiAxNiIgc3Ryb2tlPSIjM0UyNzIzIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1vcGFjaXR5PSIwLjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0xNiAzMEMxNi43MzQ3IDE2IDE2IDE2IDYgMTYiIHN0cm9rZS1vcGFjaXR5PSIwLjMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlPSIjM0UyNzIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNMTYgMzBDMTUuMjY1MyAxNiAxNiAxNiAyNiAxNiIgc3Ryb2tlPSIjMDBEMkZGIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjwvc3ZnPg=="> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Manrope:wght@500;800&display=swap"
-        rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    
     <script src="https://unpkg.com/lucide@latest"></script>
+    
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <header class="header">
         <div class="container header__container">
             <a href="./#hero" class="logo">
                 <span class="logo__icon"></span>
-                <span class="logo__text">
-                    <?= $domainTitle ?>
-                </span>
+                <span class="logo__text"><?= $domainTitle ?></span>
             </a>
-
-            <nav class="nav">
+            
+            <nav class="nav" id="nav">
                 <ul class="nav__list">
                     <li><a href="./#hero" class="nav__link">Главная</a></li>
-                    <li><a href="./#strategies" class="nav__link">Стратегии</a></li>
-                    <li><a href="./#expertise" class="nav__link">Экспертиза</a></li>
-                    <li><a href="./#insights" class="nav__link">Инсайты</a></li>
-                    <li><a href="./#reviews" class="nav__link">Отзывы</a></li>
+                    <li><a href="./#tech" class="nav__link">Технологии</a></li>
+                    <li><a href="./#process" class="nav__link">Процесс</a></li>
+                    <li><a href="./#cases" class="nav__link">Кейсы</a></li>
+                    <li><a href="./#blog" class="nav__link">Блог</a></li>
                 </ul>
             </nav>
 
-            <a href="./#contact" class="btn btn--outline header__cta">Связаться</a>
+            <a href="./#contact" class="btn btn--primary header__btn">
+                Связаться
+            </a>
 
-            <button class="burger" aria-label="Menu">
+            <button class="burger" id="burger" aria-label="Menu">
                 <span></span>
             </button>
         </div>
     </header>
-
-<main>
+    <main class="legal-page">
     <section class="pages">
         <div class="container">
+            <span class="badge">Support Center</span>
             <h1>Контактная информация</h1>
 
-            <p>
-                Мы всегда открыты для новых проектов и профессиональных дискуссий. 
+            <p class="lead-text">
+                Мы всегда открыты для новых проектов и профессиональных дискуссий в сфере AI-технологий. 
                 Свяжитесь с командой <strong><?= $domainTitle ?></strong> любым удобным для вас способом. 
-                Наши специалисты в Берлине готовы ответить на ваши вопросы по будням с 09:00 до 18:00 (CET).
+                Наши специалисты в Париже готовы ответить на ваши вопросы по будням с 09:00 до 18:00 (CET).
             </p>
 
             <div class="contact-cards">
@@ -80,8 +72,8 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
                         <i data-lucide="mail"></i>
                     </div>
                     <h2>Пишите нам</h2>
-                    <p>Для общих вопросов, предложений и запросов на консалтинг:</p>
-                    <a href="mailto:hello@<?= $fullDomain ?>" class="contact-link">hello@<?= $fullDomain ?></a>
+                    <p>Для общих вопросов, предложений и запросов на разработку ботов:</p>
+                    <a href="mailto:support@<?= $fullDomain ?>" class="contact-link">support@<?= $fullDomain ?></a>
                 </div>
 
                 <div class="contact-card">
@@ -89,8 +81,8 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
                         <i data-lucide="phone"></i>
                     </div>
                     <h2>Звоните</h2>
-                    <p>Прямая линия поддержки клиентов и экспертных консультаций:</p>
-                    <a href="tel:+390697639457" class="contact-link">+390697639457</a>
+                    <p>Прямая линия экспертных консультаций по AI-интеграциям:</p>
+                    <a href="tel:+33189480764" class="contact-link">+33 1 89 48 07 64</a>
                 </div>
 
                 <div class="contact-card">
@@ -98,18 +90,18 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
                         <i data-lucide="map-pin"></i>
                     </div>
                     <h2>Наш офис</h2>
-                    <p>Главный офис компании Pulse Dapt расположен по адресу:</p>
+                    <p>Главный офис компании <strong><?= $domainTitle ?></strong> во Франции:</p>
                     <address class="contact-address">
-                        Kurfürstendamm 21,<br>
-                        10719 Berlin,<br>
-                        Germany
+                        12 Rue de la Paix,<br>
+                        75002 Paris,<br>
+                        France
                     </address>
                 </div>
             </div>
 
             <div class="contact-extra">
                 <p>
-                    Вы также можете воспользоваться формой обратной связи на 
+                    Доступ к платформе открыт, предложение активно только в странах ЕС. Вы также можете воспользоваться формой обратной связи на 
                     <a href="./#contact">главной странице</a> для быстрой отправки запроса.
                 </p>
             </div>
@@ -118,33 +110,30 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
 </main>
 
 
-
-
-     <footer class="footer">
+    <footer class="footer">
         <div class="container footer__grid">
             <div class="footer__col">
-                <a href="./#hero" class="logo footer__logo">
+                <a href="./#hero" class="logo logo--footer">
                     <span class="logo__icon"></span>
-                    <span class="logo__text">
-                        <?= $domainTitle ?>
-                    </span>
+                    <span class="logo__text"><?= $domainTitle ?></span>
                 </a>
-                <p class="footer__description">Технологии нового поколения для вашего бизнеса. Переосмыслите подход к
-                    развитию вместе с экспертной поддержкой.</p>
+                <p class="footer__desc">
+                    Инновационная технология разработки AI-ассистентов, которая меняет правила игры в бизнесе.
+                </p>
             </div>
 
             <div class="footer__col">
                 <h4 class="footer__title">Навигация</h4>
                 <ul class="footer__links">
                     <li><a href="./#hero">Главная</a></li>
-                    <li><a href="./#strategies">Стратегии</a></li>
-                    <li><a href="./#expertise">Экспертиза</a></li>
-                    <li><a href="./#insights">Инсайты</a></li>
+                    <li><a href="./#tech">Технологии</a></li>
+                    <li><a href="./#process">Процесс</a></li>
+                    <li><a href="./#blog">Блог</a></li>
                 </ul>
             </div>
 
             <div class="footer__col">
-                <h4 class="footer__title">Документы</h4>
+                <h4 class="footer__title">Юридическая информация</h4>
                 <ul class="footer__links">
                     <li><a href="./privacy.php">Privacy Policy</a></li>
                     <li><a href="./cookies.php">Cookie Policy</a></li>
@@ -158,46 +147,50 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
 
             <div class="footer__col">
                 <h4 class="footer__title">Контакты</h4>
-                <ul class="footer__contact">
-                    <li><i data-lucide="phone" class="icon-sm"></i> +390697639457</li>
-                    <li><i data-lucide="mail" class="icon-sm"></i> hello@
-                        <?= $fullDomain ?>
+                <ul class="footer__contacts">
+                    <li>
+                        <i data-lucide="phone" class="icon-sm"></i>
+                        <a href="tel:+33189480764">+33 1 89 48 07 64</a>
                     </li>
-                    <li><i data-lucide="map-pin" class="icon-sm"></i> Kurfürstendamm 21, 10719 Berlin, Germany</li>
+                    <li>
+                        <i data-lucide="mail" class="icon-sm"></i>
+                        <a href="mailto:hello@<?= $fullDomain ?>">hello@<?= $fullDomain ?></a>
+                    </li>
+                    <li>
+                        <i data-lucide="map-pin" class="icon-sm"></i>
+                        <span>12 Rue de la Paix, 75002 Paris, France</span>
+                    </li>
                 </ul>
             </div>
         </div>
         <div class="container footer__bottom">
-            <p>&copy; 2026
-                <?= $domainTitle ?>. Все права защищены. Предложение активно только в странах ЕС.
-            </p>
+            <p>&copy; 2026 <?= $domainTitle ?>. Все права защищены. Платформа уже доступна в Европе.</p>
         </div>
     </footer>
-<div class="mobile-menu">
-    <button class="mobile-menu__close"><i data-lucide="x"></i></button>
-    <ul class="mobile-menu__list">
-        <li><a href="./#hero" class="mobile-menu__link">Главная</a></li>
-        <li><a href="./#strategies" class="mobile-menu__link">Стратегии</a></li>
-        <li><a href="./#expertise" class="mobile-menu__link">Экспертиза</a></li>
-        <li><a href="./#insights" class="mobile-menu__link">Инсайты</a></li>
-        <li><a href="./#reviews" class="mobile-menu__link">Отзывы</a></li>
-        <li><a href="./#contact" class="btn btn--primary">Связаться</a></li>
-    </ul>
-</div>
-
-<div id="cookie-popup" class="cookie-popup">
-    <div class="cookie-popup__content">
-        <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.php">Cookie
-                политике</a>.</p>
-        <button id="cookie-accept" class="btn btn--accent-sm">Принять</button>
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu__inner">
+            <button class="mobile-menu__close" id="menu-close"><i data-lucide="x"></i></button>
+            <nav class="mobile-nav">
+                <ul class="mobile-nav__list">
+                    <li><a href="./#hero" class="mobile-nav__link">Главная</a></li>
+                    <li><a href="./#tech" class="mobile-nav__link">Технологии</a></li>
+                    <li><a href="./#process" class="mobile-nav__link">Процесс</a></li>
+                    <li><a href="./#cases" class="mobile-nav__link">Кейсы</a></li>
+                    <li><a href="./#blog" class="mobile-nav__link">Блог</a></li>
+                    <li><a href="./#contact" class="mobile-nav__link mobile-nav__link--cta">Связаться</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script type="module" src="script.js"></script>    
- 
     
+    <div class="cookie-popup" id="cookie-popup">
+        <div class="cookie-popup__content">
+            <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.php">Cookie политике</a>.</p>
+            <button class="btn btn--primary btn--sm" id="cookie-accept">Принять</button>
+        </div>
+    </div>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
